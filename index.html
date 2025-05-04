@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>منصة استثمار USDT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💰 منصة الاستثمار بالـ USDT</h1>
+
+    <h2>اختر الباقة المناسبة:</h2>
+    <div class="plans-grid" id="plansGrid">
+      <!-- الباقات ستُضاف من JavaScript -->
+    </div>
+
+    <form id="investmentForm">
+      <button type="submit">إيداع الآن</button>
+    </form>
+
+    <div id="result" class="result"></div>
+    
+    <!-- عرض الإيداعات الوهمية -->
+    <div id="fakeDeposits" class="fake-deposits">
+      <h3>الإيداعات الأخيرة</h3>
+      <!-- الإيداعات ستُضاف هنا بواسطة JavaScript -->
+    </div>
+
+  </div>
+
+  <!-- نافذة المحفظة -->
+  <div id="walletModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>📥 عنوان الإيداع (USDT BEP20)</h2>
+      <p id="walletAddress">0xBa0A9BFde72F23E3AA17dCaD6d0b9DE8523cAe51</p>
+      <button onclick="copyWallet()">📋 نسخ العنوان</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
